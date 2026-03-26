@@ -14,24 +14,9 @@ public class Desafio2 {
         Scanner pegaDesafio = new Scanner(System.in);
         Integer numeroTranscricao = pegaDesafio.nextInt();
 
-        System.out.println(criptografarErrado(palavra, numeroTranscricao));
+       // System.out.println(criptografarErrado(palavra, numeroTranscricao));
     }
 
 
-    public static List<String> criptografarErrado(String palavra, Integer numero) {
-        List<Integer> listaNumeros = new ArrayList<>();
 
-        for (char p : palavra.toLowerCase().toCharArray()) {
-            listaNumeros.add(p - 'a' + numero + 1);
-        }
-
-        List<String> letrasJaAparecidas = listaNumeros.stream()
-                .map(p -> {
-                            return p.toString().chars();
-                }
-                ).toList();
-
-
-        return letrasJaAparecidas;
-    }
 }
