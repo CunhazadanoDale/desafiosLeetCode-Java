@@ -6,21 +6,14 @@ public class Desafio6 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
 
-        int[] numeros = {a, b, c};
+        int x = sc.nextInt();
+        double y = sc.nextDouble();
+        //int c = sc.nextInt();
 
-        int maior = numeros[0];
+        double resultado = x / y;
 
-        for (int i = 0; i < numeros.length; i++) {
-            if (numeros[i] > maior) {
-                maior = numeros[i];
-            }
-        }
-
-        System.out.println(maior + " eh o maior");
+        System.out.printf("%.3f km/l\n", resultado);
 
     }
 
