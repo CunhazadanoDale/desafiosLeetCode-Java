@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Desafio6 {
@@ -5,15 +6,21 @@ public class Desafio6 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
 
-        System.out.printf("TRIANGULO: %.3f\n", (a * c) / 2);
-        System.out.printf("CIRCULO: %.3f\n",3.14159 * (c * c));
-        System.out.printf("TRAPEZIO: %.3f\n", ( (a + b) * c ) / 2);
-        System.out.printf("QUADRADO: %.3f\n", b * b);
-        System.out.printf("RETANGULO: %.3f\n", a * b);
+        int[] numeros = {a, b, c};
+
+        int maior = numeros[0];
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+        }
+
+        System.out.println(maior + " eh o maior");
 
     }
 
