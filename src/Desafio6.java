@@ -7,13 +7,14 @@ public class Desafio6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
-        double y = sc.nextDouble();
-        //int c = sc.nextInt();
+        double x1 = sc.nextDouble();
+        double y1 = sc.nextDouble();
+        double x2 = sc.nextDouble();
+        double y2 = sc.nextDouble();
 
-        double resultado = x / y;
+        double resultado = Math.sqrt( Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
 
-        System.out.printf("%.3f km/l\n", resultado);
+        System.out.printf("%.4f\n", resultado);
 
     }
 
