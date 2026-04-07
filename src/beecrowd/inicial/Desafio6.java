@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package beecrowd.inicial;
+
 import java.util.Scanner;
 
 public class Desafio6 {

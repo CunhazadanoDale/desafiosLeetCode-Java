@@ -1,3 +1,5 @@
+package beecrowd.condicional;
+
 import java.util.Scanner;
 
 public class Desafio8 {

@@ -1,3 +1,5 @@
+package beecrowd.condicional;
+
 import java.util.*;
 
 public class Desafio11 {
