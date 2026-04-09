@@ -1,4 +1,4 @@
-package beecrowd;
+package beecrowd.lacosrepeticoes;
 
 import java.util.Scanner;
 
