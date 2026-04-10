@@ -30,7 +30,15 @@ public class Desafio21 {
 
         }
 
-        System.out.println(map);
+        int total = map.get("C") + map.get("R") + map.get("S");
+
+        System.out.println("Total: " + total + " cobaias");
+        System.out.println("Total de coelhos: " + map.get("C"));
+        System.out.println("Total de ratos: " + map.get("R"));
+        System.out.println("Total de sapos: " + map.get("S"));
+        System.out.printf("Percentual de coelhos: %.2f %%\n", (map.get("C") * 100.0) / total);
+        System.out.printf("Percentual de ratos: %.2f %%\n", (map.get("R") * 100.0) / total);
+        System.out.printf("Percentual de sapos: %.2f %%\n", (map.get("S") * 100.0) / total);
 
     }
 }
