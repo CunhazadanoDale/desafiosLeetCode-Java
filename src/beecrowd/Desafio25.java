@@ -9,12 +9,12 @@ public class Desafio25 {
         Scanner scanner = new Scanner(System.in);
 
         int numero = scanner.nextInt();
-        boolean primeiraLetra = true;
         scanner.nextLine();
 
         for (int i = 0; i < numero; i++) {
             String frase = scanner.nextLine();
             StringBuilder sb = new StringBuilder();
+            boolean primeiraLetra = true;
 
             for (char c : frase.toCharArray()) {
 
