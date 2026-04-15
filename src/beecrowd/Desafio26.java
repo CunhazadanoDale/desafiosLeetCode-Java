@@ -1,8 +1,6 @@
 package beecrowd;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class Desafio26 {
     public static void main(String[] args) {
@@ -15,15 +13,14 @@ public class Desafio26 {
             String frase = scanner.nextLine();
 
             int contador = 0;
-            int alfabeto = 26;
 
-            Map<Character, Integer> mapeador = new HashMap<>();
+            Set<Character> mapeador = new HashSet<>();
 
             for (char c : frase.toCharArray()) {
 
-                if (Character.isLetter(c) && !mapeador.containsKey(c)) {
+                if (Character.isLetter(c) && !mapeador.contains(Character.toLowerCase(c))) {
                     contador++;
-                    mapeador.put(c, contador);
+                    mapeador.add(c);
                 }
 
             }
