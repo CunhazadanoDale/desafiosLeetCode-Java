@@ -17,13 +17,8 @@ public class Desafio23 {
 
                 if (Character.isLetter(c)) {
 
-                    if (maiuscula) {
-                        maiuscula = false;
-                        sb.append(Character.toUpperCase(c));
-                    } else {
-                        maiuscula = true;
-                        sb.append(Character.toLowerCase(c));
-                    }
+                    sb.append(maiuscula ? Character.toUpperCase(c) : Character.toLowerCase(c));
+                    maiuscula = !maiuscula;
 
                 } else {
                     sb.append(c);
