@@ -7,35 +7,27 @@ public class Desafio27 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int num = scanner.nextInt();
+        int n = scanner.nextInt();
         scanner.nextLine();
 
-        String frase = scanner.nextLine();
-        String[] palavras = frase.split(" ");
+        String[] palavras = scanner.nextLine().split(" ");
 
-        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
 
-        for (String palavra : palavras) {
+            String palavra = palavras[i];
 
             if (palavra.length() == 3) {
-
-                if (palavra.contains("UR")) {
-                    sb.append("URI");
-                } else if (palavra.contains("OB")) {
-                    sb.append("OBI");
-                } else {
-                    sb.append(palavra);
+                if (palavra.startsWith("OB")) {
+                    palavra = "OBI";
+                } else if (palavra.startsWith("UR")) {
+                    palavra = "URI";
                 }
-
-            } else if (palavra.length() > 3){
-                sb.append(palavra);
-            } else {
-                sb.append(" ");
             }
 
-            sb.append(" ");
+            if (i > 0) System.out.print(" ");
+            System.out.print(palavra);
         }
 
-        System.out.println(sb);
+        System.out.println();
     }
 }
