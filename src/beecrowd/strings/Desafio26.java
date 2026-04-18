@@ -1,4 +1,4 @@
-package beecrowd;
+package beecrowd.strings;
 
 import java.util.*;
 
