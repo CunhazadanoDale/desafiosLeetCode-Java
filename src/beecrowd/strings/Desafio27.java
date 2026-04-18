@@ -25,6 +25,7 @@ public class Desafio27 {
             }
 
             if (i > 0) System.out.print(" ");
+            
             System.out.print(palavra);
         }
 
