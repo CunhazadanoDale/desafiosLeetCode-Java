@@ -1,3 +1,5 @@
+package beecrowd.matrizes;
+
 import java.util.Scanner;
 
 public class Desafio32 {
