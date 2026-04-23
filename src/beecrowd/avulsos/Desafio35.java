@@ -1,3 +1,5 @@
+package beecrowd.avulsos;
+
 import java.util.Scanner;
 
 public class Desafio35 {
